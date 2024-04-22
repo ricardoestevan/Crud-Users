@@ -31,7 +31,8 @@
     align-content: right;
 }
 .user__btn1 {
-    background-color: #d95d5c;  /* red delete */
+    /* background-color: #d95d5c;  red delete from template*/
+    background-color: #c72a2a;
     color: white;
     padding: 0;
     font-size: 20px;
