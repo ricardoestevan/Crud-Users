@@ -1,0 +1,71 @@
+.user{
+    background-color: white;
+    border: 2px solid;
+    border-color: #d1d1d1;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: small;
+}
+.user__name{
+    margin-bottom: 10px;
+    text-align: center;
+}
+.user__list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 0;
+}
+.user__item{
+    display: flex;
+    flex-direction: column;
+}
+.user__item span:first-child{
+    color: gray;
+}
+.user__buttons{
+    margin-top: 10px;
+    display: flex;
+    justify-content:right;
+    gap: 10px;
+    align-content: right;
+}
+.user__btn1 {
+    background-color: #d95d5c;  /* red delete */
+    color: white;
+    padding: 0;
+    font-size: 20px;
+    height:35px;
+    width:35px;
+    padding-top: 4px;
+    padding-left: 2px;
+    padding-right: 1px;
+}
+.user__btn2 {
+    background-color: white; /* white edit*/  
+    border-color: gray; 
+    border: 1px solid;
+    color: gray;
+    padding: 0;
+    font-size: 20px;
+    height:35px;
+    width:35px;
+    padding-top: 3px;
+    padding-left: 4px;
+    padding-right: 2px;
+} 
+.modal{
+    font-size: small;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.modal__buttons{
+    display: flex;
+    gap: 15px; /* Adjust the gap value as needed */
+    justify-content: center; 
+}
