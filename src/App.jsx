@@ -7,7 +7,9 @@ import UserCard from './components/UserCard';
 
 function App() {
 
-  const urlBase = 'https://users-crud.academlo.tech/' //check paths with axios clg
+  //const urlBase = 'https://users-crud.academlo.tech/' //check paths with axios clg
+
+  const urlBase = 'https://user-crud-academlo-av23.onrender.com/api/v1/'
 
   const [isOpen, setIsOpen] = useState(false)
   const [updateUser, setUpdateUser] = useState();
