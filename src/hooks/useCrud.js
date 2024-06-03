@@ -7,14 +7,14 @@ const useCrud = (base) => {
     const [hasError, setHasError] = useState(false)
     //Read Data
     const getApi = (path) =>{
-        const url = `${base}${path}/`
+        const url = `${base}/${path}`
         axios.get(url)
             .then(res => setApiData(res.data))
             .catch(err => console.log(err));
     }   
     //Create Data
     const postApi = (path, data) =>{
-        const url = `${base}${path}/`
+        const url = `${base}/${path}`
         axios.post(url, data)
             .then(res => {
                 setApiData([...apiData, res.data]);
@@ -24,7 +24,8 @@ const useCrud = (base) => {
     }
     //Delete Data
     const deleteApi = (path, id) =>{
-        const url = `${base}${path}/${id}/`
+        // const url = `${base}${path}/${id}/`
+        const url = `${base}/${path}/${id}`
         axios.delete(url, id)
             .then(() => {
                 setApiData(apiData.filter((user) => user.id!==id));
@@ -34,7 +35,7 @@ const useCrud = (base) => {
     }
     //Patch Data
     const patchApi = (path, data, id) => {
-        const url = `${base}${path}/${id}/`
+        const url = `${base}/${path}/${id}`
         axios.patch(url, data)
             .then(res => {
                 setApiData(apiData.map((user) => user.id===id ? res.data  : user));
